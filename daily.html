@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+<title>日報</title>
+</head>
+<div id='container'>
+	<div id='header'>
+		<div id='daily'>日報</div>
+		<div id='date'>3月23日</div>
+	</div>
+	
+	<div id='main'>
+		<div class='title'>実施記録</div>
+			<div style='font-size:12px;margin-left:10px;'>
+				<input type='checkbox' name='record' value='1'>設計<br>
+  				<input type="checkbox" name='record' value='2'>実装<br>
+  				<input type="checkbox" name='record' value='3'>テスト<br>
+			</div>
+		<div class='title'>できたこと</div>
+			<textarea rows='3' cols='35'></textarea>	
+		<div class='title'>できなかったこと</div>
+			<textarea rows='3' cols='35'></textarea>
+		<div class='title'>その他</div>
+			<textarea rows='3' cols='35'></textarea>
+	
+	</div>
+
+	<div id='footer'>
+		<input type='button' class='square_btn_red' style='float:right; margin-left: 5px;width:125px' value='提出'>
+		<input type='button' class='square_btn_orange' style='float:left;width:125px;' value='保存'>
+	</div>
+</div>
+
+
+<style>
+#container {
+	width: 270px;
+	height: 500px;
+	//border: solid 1px;
+	padding: 5px;
+}
+
+#header {
+	width: 260px;
+	height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+#daily {
+	float: left;
+}
+#date {
+	float: right;
+}
+
+#main{
+	width: 260px;
+	height: 400px;
+}
+
+.title {
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+#footer{
+	width: 260px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.square_btn_red {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: red;/*色*/
+    border: solid 1px red;/*線色*/
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.square_btn_red:active {/*押したとき*/
+    border: solid 1px #03A9F4;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.square_btn_orange {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #fd9535;/*色*/
+    border: solid 1px #fd9535;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.square_btn_orange:active {/*押したとき*/
+    border: solid 1px #03A9F4;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+</style>
+
+</html>
